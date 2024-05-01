@@ -80,8 +80,8 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg">
             Driven by a passion for technology and a knack for problem-solving,
             I excel as a Fullstack Developer with a focus on leveraging AWS
-            cloud services. With 2 years of experience in the tech industry,
-            I've mastered the art of crafting robust, scalable solutions that
+            cloud services. With 8 years of experience in the tech industry, I
+            have mastered the art of crafting robust, scalable solutions that
             deliver tangible results.
           </p>
           <div className="flex flex-row justify-start mt-8">
