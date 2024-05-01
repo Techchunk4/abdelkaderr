@@ -43,7 +43,7 @@ const HeroSection = () => {
             I excel as a Fullstack Developer with a focus on leveraging AWS
             cloud services. With 5 years of experience in the tech industry, I
             have mastered the art of crafting robust, scalable solutions that
-            deliver tangible results.
+            deliver tangible results🚀🚀🚀.
           </p>
           <div>
             <Link
