@@ -5,6 +5,22 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+function downloadCV() {
+  // Replace 'your_cv_filename.pdf' with the actual filename of your CV
+  const filename = "cv.pdf";
+  const url = "https://mybucketimagesnew.s3.amazonaws.com/cv.pdf"; // Replace this with the URL to your CV file
+  fetch(url)
+    .then((response) => response.blob())
+    .then((blob) => {
+      const link = document.createElement("a");
+      link.href = window.URL.createObjectURL(blob);
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+}
+
 const HeroSection = () => {
   return (
     <section className="lg:py-16">
