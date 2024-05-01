@@ -5,22 +5,6 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-function downloadCV() {
-  // Replace 'your_cv_filename.pdf' with the actual filename of your CV
-  const filename = "cv.pdf";
-  const url = "https://mybucketimagesnew.s3.amazonaws.com/cv.pdf"; // Replace this with the URL to your CV file
-  fetch(url)
-    .then((response) => response.blob())
-    .then((blob) => {
-      const link = document.createElement("a");
-      link.href = window.URL.createObjectURL(blob);
-      link.download = filename;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    });
-}
-
 const HeroSection = () => {
   return (
     <section className="lg:py-16">
@@ -39,7 +23,7 @@ const HeroSection = () => {
             <TypeAnimation
               sequence={[
                 "Abdelkader",
-                1000,
+                4000,
                 "Web Developer",
                 1000,
                 "Mobile Developer",
@@ -69,7 +53,7 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <Link
-              href="/"
+              href="https://mybucketimagesnew.s3.amazonaws.com/cv.pdf"
               className="inline-block w-full px-1 py-1 mt-3 text-white rounded-full sm:w-fit bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
